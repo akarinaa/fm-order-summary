@@ -1,0 +1,151 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.site-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 12px;
+}
+
+a:link, a:visited {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  transition: 1s;
+}
+
+a:hover {
+  color: #766cf1;
+  transition: 1s;
+}
+
+.card-container {
+  max-width: 350px;
+  width: 90%;
+  background: #fff;
+  background-image: url('./images/illustration-hero.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 50px;
+  padding-top: 270px;
+  border-radius: 15px;
+  margin: auto;
+  box-shadow: 0 30px 20px #c4d0f6;
+}
+
+.card-container h1 {
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0px;
+  color: hsl(223, 47%, 23%);
+  font-size: 28px;
+}
+
+.payment-button {
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  border: 1px solid hsl(245, 75%, 52%);
+  font-family: 'Red Hat Display', sans-serif;
+  color: #fff;
+  padding: 15px;
+  font-weight: 700;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 10px 20px #dbd5f1;
+  transition: 1s;
+}
+
+.payment-button:hover {
+  background-color: #766cf1;
+  border-color: #766cf1;
+  transition: 1s;
+}
+
+.cancel-button {
+  background: none;
+  border: none;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  transition: 1s;
+}
+
+.cancel-button:hover {
+  color: hsl(223, 47%, 23%);
+  transition: 1s;
+}
+
+.plan-selection {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-align: left;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px 25px;
+  border-radius: 10px;
+}
+
+.plan-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-info strong {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.plan-change {
+  align-self: center;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .plan-selection {
+    grid-template-columns: auto;
+    text-align: center;
+    grid-row-gap: 20px;
+    padding: 30px;
+  }
+
+  .plan-change {
+    text-align: center;
+  }
+
+  .card-container {
+    max-width: auto;
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .attribution {
+    position: relative;
+  }
+
+  .site-container {
+    min-height: auto;
+  }
+
+
+}
